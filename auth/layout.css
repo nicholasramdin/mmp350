@@ -21,6 +21,6 @@ img{
     grid-column: 1 / 2;
 }
 
-#login{
+#login, #user-info{
     grid-column: 3 / span 1;
 }
