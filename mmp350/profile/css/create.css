@@ -1,0 +1,32 @@
+input,button{
+    font-size:1em;
+    font-family: inherit;
+    border: none;
+    
+}
+
+input:focus,button:focus{
+outline:none;
+}
+
+input{
+    border-bottom: :1px solid black;
+}
+
+button{
+background-color: lightblue;}
+
+#main {
+    display: 
+}
+
+#create-account{
+    display:flex;
+    justify-content: space-between;
+}
+
+#create-account input, #create-account button{
+    padding:0.5em;
+    
+}
+
