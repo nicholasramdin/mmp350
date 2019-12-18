@@ -21,3 +21,4 @@ firebase.database().ref('users').once('value', function(snapshot) {
 		loadPosts();	
 	}
 });
+

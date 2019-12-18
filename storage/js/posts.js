@@ -54,9 +54,3 @@ function createPost(postData, _userData, postId,) {
     post.appendChild(postImg);
 	
 }
-
-firebase.database().ref('users').once('value', function(snapshot) {
-	if (snapshot.numChildren() === userCount) {
-		loadPosts();
-	}
-});

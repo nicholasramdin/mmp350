@@ -10,3 +10,9 @@ img{
     max-width: 500px;
     max-height: 250px;
 }
+
+h1{
+    font-size:40px;
+   padding: 10px;
+}
+
