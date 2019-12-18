@@ -1,0 +1,12 @@
+#posts{
+    text-align: center;
+}
+
+#title{
+    text-align: center;
+}
+
+img{
+    max-width: 500px;
+    max-height: 250px;
+}
