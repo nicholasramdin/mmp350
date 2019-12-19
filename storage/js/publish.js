@@ -8,7 +8,7 @@ postText.addEventListener('keyup', function(event) {
 	}
 });
 
-const ref = firebase.database().ref('posts');
+const postsRef = firebase.database().ref('posts');
 let file;
 
 function publishPost() {
@@ -19,7 +19,7 @@ function publishPost() {
 	postText.value = "";
 	
 	// push post to database
-	 const promise = ref.push(post);
+	 const promise = postsRef.push(post);
     promise.then(function (snapshot) {
         addImage(snapshot.key);
     });
@@ -38,7 +38,7 @@ function addImage(postId) {
     promise.then(function(image) {
         return image.ref.getDownloadURL();
     }).then(function(url) {
-       ref.child(postId).update({ imageURL: url });
+       postsRef.child(postId).update({ imageURL: url });
     });
 }
 
